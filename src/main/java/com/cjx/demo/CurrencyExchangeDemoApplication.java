@@ -95,7 +95,7 @@ public class CurrencyExchangeDemoApplication implements CommandLineRunner	{
 					noFormat = false;
 					while(scanner.hasNext()) {
 						String s = scanner.nextLine();
-						if(s.equals("quit")) {
+						if(s.equals("exit")) {
 							System.exit(shutDownServiceImpl.initiateShutdown(0));
 							break;
 						}else {
@@ -134,7 +134,7 @@ public class CurrencyExchangeDemoApplication implements CommandLineRunner	{
 		System.out.println("Please enter a pyment and followed by hitting the enter key, e.g. USD 100");
 		while(scanner.hasNext()) {
 			String s = scanner.nextLine();
-			if(s.equals("quit")) {
+			if(s.equals("exit")) {
 				System.exit(shutDownServiceImpl.initiateShutdown(0));
 				scanner.close();
 				break;
@@ -143,6 +143,11 @@ public class CurrencyExchangeDemoApplication implements CommandLineRunner	{
 				Double amount = 0d;
 				try {
 					if(s.trim().equals("")) {
+						continue;
+					}
+					if(s.trim().equals("quit")) {
+						exchangeSchedulingUtil.stopTask();
+						System.out.println("Please enter a pyment and followed by hitting the enter key, e.g. USD 100");
 						continue;
 					}
 					String[] inputs = s.trim().split(" ");
