@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cjx.demo.util.HttpUtilTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.539 s - in com.cjx.demo.util.HttpUtilTest

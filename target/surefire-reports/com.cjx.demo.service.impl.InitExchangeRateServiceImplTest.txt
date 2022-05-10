@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.cjx.demo.service.impl.InitExchangeRateServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.263 s - in com.cjx.demo.service.impl.InitExchangeRateServiceImplTest

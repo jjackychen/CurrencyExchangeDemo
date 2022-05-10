@@ -1,0 +1,8 @@
+
+logging:
+  level: 
+    root: ERROR
+  
+3rdApi: 
+  endPoint: https://openexchangerates.org/api/latest.json
+  appId: 4aa141af29344425974cb4afb1e6b532
