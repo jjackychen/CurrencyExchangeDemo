@@ -56,4 +56,7 @@ Currency-Exchagne-demo provides two functions.
           
 ## Notice
        This program only test on the **Mac** platform.
+       This program only supports currency exchange of USD, HKD, RMB, NZD, GBP, if you want to support more currencies,
+       please modify the Currency.java under the {project root directory}/src/main/java/com/cjx/demo/model and
+       add the currencies you want to support to the Enum then re do the Step 2: Complie and install new jar package in Quick start.
       
